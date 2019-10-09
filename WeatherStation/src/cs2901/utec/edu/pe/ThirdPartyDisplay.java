@@ -1,13 +1,8 @@
 package cs2901.utec.edu.pe;
 
-public class CurrentCoditions implements Observer {
+public class ThirdPartyDisplay implements Observer {
     private double Temperature, Humidity, Pressure;
     private WeatherData subject;
-
-    public CurrentCoditions (WeatherData weatherData){
-        subject = weatherData;
-    }
-
     @Override
     public void update() {
         Temperature = subject.getTemperature();
